@@ -1,0 +1,548 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+background:#f5f5f5;
+color:#222;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+background:#111 !important;
+padding:15px 0;
+}
+
+.navbar-brand{
+font-weight:600;
+color:white !important;
+}
+
+.nav-link{
+color:#ddd !important;
+margin-left:20px;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:white !important;
+transform:translateY(-2px);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+
+height:100vh;
+
+/* background kamera dramatis */
+
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+color:white;
+
+position:relative;
+overflow:hidden;
+
+}
+
+/* efek vignette */
+
+.hero::after{
+
+content:"";
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:
+radial-gradient(circle at center,
+rgba(0,0,0,0) 40%,
+rgba(0,0,0,0.7) 100%);
+
+z-index:1;
+
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+/* PROMO BADGE */
+
+.promo-badge{
+
+background:#928ecf;
+
+padding:6px 18px;
+
+border-radius:30px;
+
+font-size:14px;
+font-weight:500;
+
+display:inline-block;
+
+margin-bottom:20px;
+
+}
+
+/* TITLE */
+
+.hero-title{
+
+font-size:60px;
+font-weight:600;
+margin-bottom:15px;
+
+animation:fadeUp 1.2s ease;
+
+}
+
+/* SUBTITLE */
+
+.hero-subtitle{
+
+font-size:18px;
+opacity:0.9;
+
+margin-bottom:25px;
+
+animation:fadeUp 1.6s ease;
+
+}
+
+/* BUTTON GROUP */
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:15px;
+
+margin-top:20px;
+
+animation:fadeUp 2s ease;
+
+}
+
+/* MAIN BUTTON */
+
+.btn-main{
+
+background:#928ecf;
+color:white;
+
+padding:12px 30px;
+
+border-radius:30px;
+
+font-weight:500;
+
+transition:0.3s;
+
+}
+
+.btn-main:hover{
+
+background:#5b5983;
+transform:translateY(-3px);
+
+}
+
+/* PHONE */
+
+.hero-phone{
+
+margin-top:25px;
+
+opacity:0.8;
+
+font-size:16px;
+
+}
+
+/* =========================
+   CARD (HALAMAN KAMERA)
+========================= */
+
+.card{
+
+border:none;
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+border-radius:15px 15px 0 0;
+
+}
+
+.card-title{
+
+font-weight:600;
+
+}
+
+.price{
+
+font-size:22px;
+font-weight:600;
+
+color:#111;
+
+}
+
+/* =========================
+   FORM (KONTAK)
+========================= */
+
+.form-control{
+
+border-radius:10px;
+padding:12px;
+
+}
+
+.btn-submit{
+
+background:#111;
+
+color:white;
+
+border:none;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+transition:0.3s;
+
+}
+
+.btn-submit:hover{
+
+background:#333;
+
+}
+
+/* =========================
+   HALAMAN HARGA DRAMATIS
+========================= */
+
+.harga-section{
+
+min-height:100vh;
+
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url("https://images.unsplash.com/photo-1495121605193-b116b5b09a84?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+
+padding-top:120px;
+
+}
+
+/* TITLE */
+
+.judul-harga{
+
+font-size:50px;
+font-weight:600;
+
+margin-bottom:40px;
+
+text-align:center;
+
+}
+
+/* TABLE BOX */
+
+.table-box{
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(10px);
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+/* TABLE STYLE */
+
+.table-modern{
+
+color:white;
+
+}
+
+.table-modern th{
+
+border-bottom:2px solid rgba(255,255,255,0.2);
+
+}
+
+.table-modern td{
+
+padding:18px;
+
+border-bottom:1px solid rgba(255,255,255,0.1);
+
+}
+
+/* HOVER EFFECT */
+
+.table-modern tbody tr{
+
+transition:0.3s;
+
+}
+
+.table-modern tbody tr:hover{
+
+background:rgba(255,255,255,0.08);
+
+transform:scale(1.01);
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+background:#111;
+
+color:#ccc;
+
+padding:25px;
+
+text-align:center;
+
+margin-top:50px;
+
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* ======================
+HARGA MODERN
+====================== */
+
+.harga-modern{
+
+min-height:100vh;
+
+padding-top:140px;
+padding-bottom:80px;
+
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+text-align:center;
+
+}
+
+/* TITLE */
+
+.harga-title{
+
+font-size:50px;
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+/* SUBTITLE */
+
+.harga-sub{
+
+opacity:0.8;
+margin-bottom:50px;
+
+}
+
+/* CARD */
+
+.kamera-card{
+
+background:rgba(255,255,255,0.08);
+
+padding:35px;
+
+border-radius:15px;
+
+backdrop-filter:blur(10px);
+
+transition:0.4s;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+/* HOVER */
+
+.kamera-card:hover{
+
+transform:translateY(-10px) scale(1.02);
+
+background:rgba(255,255,255,0.12);
+
+}
+
+/* NAMA KAMERA */
+
+.kamera-card h3{
+
+font-weight:600;
+
+margin-bottom:10px;
+
+}
+
+/* TYPE */
+
+.kamera-type{
+
+opacity:0.7;
+
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+/* PRICE */
+
+.kamera-price{
+
+font-size:32px;
+
+font-weight:600;
+
+color:#928ecf;
+
+}
+
+/* DAY */
+
+.kamera-day{
+
+opacity:0.7;
+
+margin-bottom:25px;
+
+}
+
+/* BUTTON */
+
+.btn-sewa{
+
+background:#928ecf;
+
+color:white;
+
+padding:10px 25px;
+
+border-radius:30px;
+
+transition:0.3s;
+
+}
+
+.btn-sewa:hover{
+
+background:#6e6bb1;
+
+transform:translateY(-2px);
+
+color:white;
+
+}
